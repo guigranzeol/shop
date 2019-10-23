@@ -1,7 +1,7 @@
 <template>
   <span>
       <bar-top 
-        topClass="green lighten-5"
+        topClass="green lighten-5 class-scss"
         buttonClass="blue"
         userRoute="/user"
         cartRouter="/cart"
