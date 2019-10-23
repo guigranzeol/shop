@@ -1,24 +1,22 @@
 <template>
-  <div>
-    <div :class="topClass">
-      <v-container>
-        <v-row align="center" justify="center" class="text-center">
-          <v-col md="3" cols="12" class="text-center">
-            <img class="img-class" :src="imgTop" alt />
-          </v-col>
-          <v-col class="search-class" cols="12" md="6">
-            <input type="text" />
-            <button :class="buttonClass">
-              <v-icon>mdi-magnify</v-icon>
-            </button>
-          </v-col>
-          <v-col class="icons-class text-left" cols="12" md="3" >
-              <a :href="userRoute"><v-icon>mdi-account-outline</v-icon>Entrar </a> <br>
-              <a :href="cartRouter" ><v-icon >mdi-cart-outline</v-icon>Carrinho</a>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div>
+  <div id="nav-top">
+    <v-container>
+      <v-row align="center" justify="center" class="text-center">
+        <v-col md="3" cols="12" class="text-center">
+          <img class="img-class" :src="imgTop" alt />
+        </v-col>
+        <v-col class="search-class" cols="12" md="6">
+          <input type="text" />
+          <button>
+            <v-icon>mdi-magnify</v-icon>
+          </button>
+        </v-col>
+        <v-col class="icons-class text-left" cols="12" md="3" >
+            <a :href="userRoute"><v-icon>mdi-account-outline</v-icon>Entrar </a> <br>
+            <a :href="cartRouter" ><v-icon >mdi-cart-outline</v-icon>Carrinho</a>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
@@ -26,13 +24,7 @@
 export default {
   data: () => ({
     imgTop: require("@/assets/logo.png") //TODO Alterar para PRops
-  }),
-  props: {
-    topClass: { String },
-    buttonClass: { String },
-    userRoute:{ String },
-    cartRouter:{ String },
-  }
+  })
 };
 </script>
 
