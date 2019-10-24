@@ -3,11 +3,7 @@
     <v-row>
       <div class="categoryMenu">
         <ul>
-          <li><a href="#">Masculino</a></li>
-          <li><a href="#">Feminino</a></li>
-          <li><a href="#">Infantil</a></li>
-          <li><a href="#">Esporte</a></li>
-          <li><a href="#">Estilos</a></li>
+          <slot></slot>
         </ul>
       </div>
       <div class="allCategory">
