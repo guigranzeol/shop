@@ -30,6 +30,7 @@ export default {
 
 <style scoped>
 .img-class {
+  color:red;
   height: 70px;
   width: auto;
 }
