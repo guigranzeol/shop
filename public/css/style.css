@@ -1,4 +1,10 @@
 #nav-top {
-  border: 5px solid red; }
+  background-color: #bf1818; }
+
+.font-color i {
+  color: #fff; }
+
+.icons-class a {
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

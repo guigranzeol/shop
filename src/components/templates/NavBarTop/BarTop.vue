@@ -11,7 +11,7 @@
             <v-icon>mdi-magnify</v-icon>
           </button>
         </v-col>
-        <v-col class="icons-class text-left" cols="12" md="3" >
+        <v-col class="icons-class text-left font-color" cols="12" md="3" >
             <a :href="userRoute"><v-icon>mdi-account-outline</v-icon>Entrar </a> <br>
             <a :href="cartRouter" ><v-icon >mdi-cart-outline</v-icon>Carrinho</a>
         </v-col>
@@ -58,14 +58,12 @@ export default {
 }
 
 .icons-class a{
-    color: black;
     text-decoration:none;
     font-size: 20px;
     margin-top: 5px; 
 }
 
 .icons-class i{
-    color: black;
     text-decoration:none;
     font-size: 30px;
 }
@@ -74,8 +72,8 @@ export default {
 @media (max-width: 960px) 
 {
   .search-class input {
-  width: 200px;
-}
+    width: 200px;
+  }
 }
 
 </style>

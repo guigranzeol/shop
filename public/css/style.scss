@@ -1,3 +1,15 @@
+$colorPrimary: #bf1818;
+$colorSecundary: #580000;
+$colorFont: #fff;
+
 #nav-top{
-    border: 5px solid red;
+    background-color: $colorPrimary;
+}
+
+.font-color i{
+    color: $colorFont;
+}
+
+.icons-class a{
+    color: $colorFont;
 }
