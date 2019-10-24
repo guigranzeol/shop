@@ -5,6 +5,8 @@
         cartRouter="/cart"
        ></bar-top>
        <nav-bar></nav-bar>
+        //TODO criar components Banner
+        //TODO Pesquisar pluguins para colocar os Banners
   </span>
 </template>
 

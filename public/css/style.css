@@ -21,4 +21,17 @@ a {
   border-radius: 50%;
   color: #bf1818 !important; }
 
+#nav-bar {
+  background-color: #580000; }
+
+#nav-bar a {
+  color: #fff;
+  transition: 0.5s; }
+
+#nav-bar a:hover {
+  color: #ececec; }
+
+.icon-color {
+  color: #fff !important; }
+
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,8 @@ $colorGray: #ececec;
 $timeTransition: .5s;
 $colorWhite: #fff;
 
+//----------------NAVTOP--------------
+
 #nav-top{
     background-color: $colorPrimary;
 }
@@ -32,4 +34,23 @@ a{
     background-color: $colorWhite;
     border-radius: 50%;
     color: $colorPrimary !important;
+}
+
+//-----------------NAVBAR----------------
+
+#nav-bar{
+    background-color: $colorSecundary;
+}
+
+#nav-bar a{
+    color: $colorWhite;
+    transition: $timeTransition;
+}
+
+#nav-bar a:hover{
+    color: $colorGray;
+}
+
+.icon-color{
+    color: $colorWhite !important;
 }
