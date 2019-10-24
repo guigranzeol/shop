@@ -2,6 +2,7 @@ $colorPrimary: #bf1818;
 $colorSecundary: #580000;
 $colorGray: #ececec;
 $timeTransition: .5s;
+$colorWhite: #fff;
 
 #nav-top{
     background-color: $colorPrimary;
@@ -21,4 +22,14 @@ $timeTransition: .5s;
 
 input:focus, button:focus {
     outline: 0 !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.background-icon-top-menu{
+    background-color: $colorWhite;
+    border-radius: 50%;
+    color: $colorPrimary !important;
 }

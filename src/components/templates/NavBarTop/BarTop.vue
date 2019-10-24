@@ -11,9 +11,9 @@
             <v-icon class="text-primay">mdi-magnify</v-icon>
           </button>
         </v-col>
-        <v-col class="icons-class text-left font-color" cols="12" md="3" >
-            <a :href="userRoute"><v-icon>mdi-account-outline</v-icon>Entrar </a> <br>
-            <a :href="cartRouter" ><v-icon >mdi-cart-outline</v-icon>Carrinho</a>
+        <v-col class="icons-class text-left font-color" cols="12" md="3">
+          <a :href="cartRouter" ><v-icon class="background-icon-top-menu">mdi-cart</v-icon></a>
+          <a :href="userRoute"><v-icon class="background-icon-top-menu">mdi-account</v-icon> </a>            
         </v-col>
       </v-row>
     </v-container>
@@ -23,7 +23,7 @@
 <script>
 export default {
   data: () => ({
-    imgTop: require("@/assets/logo.png") //TODO Alterar para PRops
+    imgTop: require("@/assets/images/logo.png")
   })
 };
 </script>
@@ -61,23 +61,20 @@ export default {
   position: absolute;
 }
 
+.icons-class{
+  display: flex;
+  width: 70%;
+  padding: 0 70px;
+}
+
 .icons-class a{
-    text-decoration:none;
-    font-size: 20px;
-    margin-top: 5px; 
+  flex: 1;
+  text-align: center;
 }
 
 .icons-class i{
-    text-decoration:none;
-    font-size: 30px;
-}
-
-
-@media (max-width: 960px) 
-{
-  .search-class input {
-    width: 200px;
-  }
+  padding: 10px;
+  font-size: 30px;
 }
 
 </style>

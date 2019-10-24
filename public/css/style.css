@@ -13,4 +13,12 @@
 input:focus, button:focus {
   outline: 0 !important; }
 
+a {
+  text-decoration: none !important; }
+
+.background-icon-top-menu {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #bf1818 !important; }
+
 /*# sourceMappingURL=style.css.map */
