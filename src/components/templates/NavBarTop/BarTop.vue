@@ -24,7 +24,11 @@
 export default {
   data: () => ({
     imgTop: require("@/assets/images/logo.png")
-  })
+  }),
+  props:{
+    //TODO Transformar Logo Em Props
+  }
+
 };
 </script>
 

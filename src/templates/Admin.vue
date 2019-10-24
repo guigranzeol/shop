@@ -1,27 +1,34 @@
 <template>
   <span>
-    <bar-top userRoute="/user" cartRouter="/cart"></bar-top>
+    <bar-top userRoute="/user" cartRouter="/cart"> </bar-top>
     <nav-bar>
-      <nav-bar-li name="Female" src="#" />
-      <nav-bar-li name="Male" src="#" />
-      <nav-bar-li name="Childish" src="#" />
-      <nav-bar-li name="Sport" src="#" />
-      <nav-bar-li name="Styles" src="#" />
-    </nav-bar>//TODO criar components Banner
-    //TODO Pesquisar pluguins para colocar os Banners
+      <default-li name="Female" src="#" />
+      <default-li name="Male" src="#" />
+      <default-li name="Childish" src="#" />
+      <default-li name="Sport" src="#" />
+      <default-li name="Styles" src="#" />
+    </nav-bar>
+    <slot></slot>
+    <footer-page>
+    <template v-slot:col1>Teste</template>
+    <template v-slot:col2>Teste 2</template>
+    <template v-slot:col3>Teste 3</template>
+    </footer-page>
   </span>
 </template>
 
 <script>
 import BarTop from "@/components/templates/NavBarTop/BarTop";
 import NavBar from "@/components/templates/NavBarTop/NavBar";
-import NavBarLi from "@/components/templates/NavBarTop/NavBarLi";
+import DefaultLi from "@/components/reusables/DefaultLi";
+import FooterPage from "@/components/templates/Footer/FooterPage";
 
 export default {
   components: {
     BarTop,
     NavBar,
-    NavBarLi
+    DefaultLi,
+    FooterPage
   }
 };
 </script>

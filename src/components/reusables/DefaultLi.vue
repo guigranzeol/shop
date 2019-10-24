@@ -12,9 +12,5 @@ export default {
 </script>
 
 <style scoped>
-.default{
-  flex: 1;
-  list-style-type: none;
-  padding: 15px;
-}
+
 </style>
