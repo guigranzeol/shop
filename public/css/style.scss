@@ -1,15 +1,24 @@
 $colorPrimary: #bf1818;
 $colorSecundary: #580000;
-$colorFont: #fff;
+$colorGray: #ececec;
+$timeTransition: .5s;
 
 #nav-top{
     background-color: $colorPrimary;
 }
 
-.font-color i{
-    color: $colorFont;
+.text-primay{
+    color: $colorPrimary !important;
 }
 
-.icons-class a{
-    color: $colorFont;
+.background-gray-hover{
+    transition: $timeTransition;
+}
+
+.background-gray-hover:hover{
+    background-color: $colorGray;
+}
+
+input:focus, button:focus {
+    outline: 0 !important;
 }

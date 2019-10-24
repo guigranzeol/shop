@@ -1,10 +1,16 @@
 #nav-top {
   background-color: #bf1818; }
 
-.font-color i {
-  color: #fff; }
+.text-primay {
+  color: #bf1818 !important; }
 
-.icons-class a {
-  color: #fff; }
+.background-gray-hover {
+  transition: 0.5s; }
+
+.background-gray-hover:hover {
+  background-color: #ececec; }
+
+input:focus, button:focus {
+  outline: 0 !important; }
 
 /*# sourceMappingURL=style.css.map */

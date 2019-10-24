@@ -7,8 +7,8 @@
         </v-col>
         <v-col class="search-class" cols="12" md="6">
           <input type="text" />
-          <button>
-            <v-icon>mdi-magnify</v-icon>
+          <button class="background-gray-hover">
+            <v-icon class="text-primay">mdi-magnify</v-icon>
           </button>
         </v-col>
         <v-col class="icons-class text-left font-color" cols="12" md="3" >
@@ -34,27 +34,31 @@ export default {
   width: auto;
 }
 
-.search-class input {
-  text-align: center;
+.search-class{
+  position: relative;
+  height: 50px;
 }
 
 .search-class input {
-  border: solid black 1px;
-  border-radius: 20px 0 0 20px;
-  width: 360px;
-  height: 45px;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
   font-size: 20px;
-  outline: 0;
-  background: white;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
 }
 
 .search-class button {
-  border: solid black 1px;
-  border-radius: 0px 20px 20px 0px;
-  width: 40px;
-  height: 45px;
+  border-radius: 25px;
+  width: 80px;
+  height: 100%;
   font-size: 20px;
-  outline: 0;
+  top: 0;
+  right: 0;
+  position: absolute;
 }
 
 .icons-class a{
