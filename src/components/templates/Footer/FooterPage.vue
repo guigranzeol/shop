@@ -13,16 +13,14 @@
 <script>
 export default {
 
-}
-</script>
+}   //TODO Acertar Classe pra ficar fixo botton
+</script> 
 
 <style scoped>
 .default {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+    position: relative;
+    top: 1vh;
+    margin-top:auto;
 }
 
 </style>

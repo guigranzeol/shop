@@ -2,11 +2,11 @@
   <span>
     <bar-top userRoute="/user" cartRouter="/cart"> </bar-top>
     <nav-bar>
-      <default-li name="Female" src="#" />
-      <default-li name="Male" src="#" />
-      <default-li name="Childish" src="#" />
-      <default-li name="Sport" src="#" />
-      <default-li name="Styles" src="#" />
+      <li-default name="Female" src="#" />
+      <li-default name="Male" src="#" />
+      <li-default name="Childish" src="#" />
+      <li-default name="Sport" src="#" />
+      <li-default name="Styles" src="#" />
     </nav-bar>
     <slot></slot>
     <footer-page>
@@ -20,14 +20,14 @@
 <script>
 import BarTop from "@/components/templates/NavBarTop/BarTop";
 import NavBar from "@/components/templates/NavBarTop/NavBar";
-import DefaultLi from "@/components/reusables/DefaultLi";
+import LiDefault from "@/components/reusables/LiDefault";
 import FooterPage from "@/components/templates/Footer/FooterPage";
 
 export default {
   components: {
     BarTop,
     NavBar,
-    DefaultLi,
+    LiDefault,
     FooterPage
   }
 };
