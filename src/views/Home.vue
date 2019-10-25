@@ -16,18 +16,21 @@
         buttonHref="/Other"
       />
     </v-carousel>
+    <categories-grid/>
   </admin>
 </template>
 
 <script>
 import Admin from "@/templates/Admin";
 import CarouselDefault from "@/components/reusables/CarouselDefault";
+import CategoriesGrid from "@/components/views/home/CategoriesGrid";
 
 export default {
   name: "Home",
   components: {
     Admin,
-    CarouselDefault
+    CarouselDefault,
+    CategoriesGrid
   }
 };
 </script>
