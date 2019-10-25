@@ -3,6 +3,8 @@ $colorSecundary: #580000;
 $colorGray: #ececec;
 $timeTransition: .5s;
 $colorWhite: #fff;
+$DefaulText: #fff;
+$DefaultBg: #bf1818;
 
 //----------------NAVTOP--------------
 
@@ -15,6 +17,15 @@ $colorWhite: #fff;
     color: $colorWhite;
 }
 
+#carousel-text{
+   color: $colorSecundary;
+   
+}
+
+#corousel-button{
+    background-color: rgb(12, 12, 141);
+    color: $DefaulText;
+}
 
 
 .text-primay{

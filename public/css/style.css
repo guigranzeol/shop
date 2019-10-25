@@ -7,6 +7,15 @@
   color: #fff;
 }
 
+#carousel-text {
+  color: #580000;
+}
+
+#corousel-button {
+  background-color: #0c0c8d;
+  color: #fff;
+}
+
 .text-primay {
   color: #bf1818 !important;
 }
