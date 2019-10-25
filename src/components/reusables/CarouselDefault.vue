@@ -6,11 +6,11 @@
         transition="fade-transition"
       >
         <v-row justify="end" align="center">
-          <v-col md="5" col="5" class="text" align="center">
+          <v-col md="5" col="5" class="text" align="center" v-if="title && text">
             <div  id="carousel-text">
               <h2 >{{ title }}</h2>
               <p >{{ text }}</p>
-              <button id="corousel-button">{{ buttonText}}</button>
+              <a :href="buttonHref"><button v-if="buttonText" id="corousel-button">{{ buttonText}}</button></a>
             </div>
           </v-col>
         </v-row>
@@ -30,7 +30,8 @@ export default {
     src: {String},
     title: {String},
     text: {String },
-    buttonText:{String}
+    buttonText:{String},
+    buttonHref:{String}
   }
 };
 </script>
