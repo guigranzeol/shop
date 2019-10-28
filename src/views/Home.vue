@@ -16,7 +16,12 @@
         buttonHref="/Other"
       />
     </v-carousel>
-    <categories-grid/>
+    <categories-grid
+     title1="MAN" route1="man" img1="https://image.shutterstock.com/image-photo/casually-handsome-confident-young-man-260nw-439433326.jpg"
+     title2="BOOTS" route2="boots" img2="https://image.shutterstock.com/image-photo/ankle-boot-nubuck-leather-isolated-260nw-1162044976.jpg"
+     title3="LOOKS" route3="looks" img3="https://cdn.pixabay.com/photo/2015/03/26/10/38/girl-691712__480.jpg"
+     title4="WOMAN" route4="woman" img4="https://cdn.pixabay.com/photo/2019/09/16/09/30/alone-4480444__480.jpg"
+    />
   </admin>
 </template>
 
