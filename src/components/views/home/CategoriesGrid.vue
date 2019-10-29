@@ -134,6 +134,7 @@ export default { //TODO Alinhar texto do hover centro, e configurar melhor as im
   grid-gap: 20px;
   margin: 0 auto;
   max-width: 1920px;
+  min-height: 30vh;
   padding: 10px;
   grid-template-areas:
     "img-1 img-2  img-4"
