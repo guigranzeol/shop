@@ -1,6 +1,6 @@
 <template>
   <span>
-    <h1 class="mt-5 text-center">More Categories</h1>
+    <h1 class="mt-5 text-center" id="moreCategoriesTitle">MMORE CATEGORIES</h1>
     <section class="default my-5">
       <div class="img-1">
         <router-link :to="route1">

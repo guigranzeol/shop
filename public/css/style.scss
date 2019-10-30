@@ -1,10 +1,12 @@
-$colorPrimary: #bf1818;
-$colorSecundary: #580000;
+$colorPrimary: rgb(4, 4, 99);
+$colorSecundary: white;
 $colorGray: #ececec;
 $timeTransition: .5s;
 $colorWhite: #fff;
 $DefaulText: #fff;
 $DefaultBg: #bf1818;
+$DefaultSubtitles: rgb(150, 132, 132);
+$defaultTitles: black;
 
 //----------------NAVTOP--------------
 
@@ -26,7 +28,13 @@ $DefaultBg: #bf1818;
     background-color: rgb(12, 12, 141);
     color: $DefaulText;
 }
+#moreCategoriesTitle{
+    color: $DefaultSubtitles;
+}
 
+#carouselMostSeenTitle{
+    color: $DefaultSubtitles;
+}
 
 .text-primay{
     color: $colorPrimary !important;
@@ -58,17 +66,18 @@ a{
 
 #nav-bar{
     background-color: $colorSecundary;
+
 }
 
 #nav-bar a{
-    color: $colorWhite;
+    color: $defaultTitles;
     transition: $timeTransition;
 }
 
 #nav-bar a:hover{
-    color: $colorGray;
+    color: $DefaultSubtitles;
 }
 
 .icon-color{
-    color: $colorWhite !important;
+    color: $defaultTitles !important;
 }

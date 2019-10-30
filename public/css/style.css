@@ -1,14 +1,14 @@
 #nav-top {
-  background-color: #bf1818;
+  background-color: #040463;
 }
 
 #footer {
-  background-color: #bf1818;
+  background-color: #040463;
   color: #fff;
 }
 
 #carousel-text {
-  color: #580000;
+  color: white;
 }
 
 #corousel-button {
@@ -16,8 +16,16 @@
   color: #fff;
 }
 
+#moreCategoriesTitle {
+  color: #968484;
+}
+
+#carouselMostSeenTitle {
+  color: #968484;
+}
+
 .text-primay {
-  color: #bf1818 !important;
+  color: #040463 !important;
 }
 
 .background-gray-hover {
@@ -39,24 +47,24 @@ a {
 .background-icon-top-menu {
   background-color: #fff;
   border-radius: 50%;
-  color: #bf1818 !important;
+  color: #040463 !important;
 }
 
 #nav-bar {
-  background-color: #580000;
+  background-color: white;
 }
 
 #nav-bar a {
-  color: #fff;
+  color: black;
   transition: 0.5s;
 }
 
 #nav-bar a:hover {
-  color: #ececec;
+  color: #968484;
 }
 
 .icon-color {
-  color: #fff !important;
+  color: black !important;
 }
 
 /*# sourceMappingURL=style.css.map */

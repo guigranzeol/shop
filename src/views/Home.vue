@@ -22,6 +22,7 @@
      title3="LOOKS" route3="looks" img3=""
      title4="WOMAN" route4="woman" img4=""
     />
+    <carousel-most-seen/>
   </admin>
 </template>
 
@@ -29,13 +30,15 @@
 import Admin from "@/templates/Admin";
 import CarouselDefault from "@/components/reusables/CarouselDefault";
 import CategoriesGrid from "@/components/views/home/CategoriesGrid";
+import CarouselMostSeen from "@/components/reusables/CarouselMostSeen";
 
 export default {
   name: "Home",
   components: {
     Admin,
     CarouselDefault,
-    CategoriesGrid
+    CategoriesGrid,
+    CarouselMostSeen
   }
 };
 </script>
