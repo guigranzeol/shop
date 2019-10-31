@@ -1,70 +1,63 @@
 #nav-top {
-  background-color: #040463;
-}
+  background-color: #bf1818; }
 
 #footer {
-  background-color: #040463;
-  color: #fff;
-}
-
-#carousel-text {
-  color: white;
-}
-
-#corousel-button {
-  background-color: #0c0c8d;
-  color: #fff;
-}
-
-#moreCategoriesTitle {
-  color: #968484;
-}
-
-#carouselMostSeenTitle {
-  color: #968484;
-}
+  background-color: #bf1818;
+  color: #fff; }
 
 .text-primay {
-  color: #040463 !important;
-}
+  color: #bf1818 !important; }
 
 .background-gray-hover {
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 
 .background-gray-hover:hover {
-  background-color: #ececec;
-}
+  background-color: #ececec; }
 
 input:focus, button:focus {
-  outline: 0 !important;
-}
+  outline: 0 !important; }
 
 a {
-  text-decoration: none !important;
-}
+  text-decoration: none !important; }
 
 .background-icon-top-menu {
   background-color: #fff;
   border-radius: 50%;
-  color: #040463 !important;
-}
+  color: #bf1818 !important; }
 
 #nav-bar {
-  background-color: white;
-}
+  background-color: #580000; }
 
 #nav-bar a {
-  color: black;
-  transition: 0.5s;
-}
+  color: #fff;
+  transition: 0.5s; }
 
 #nav-bar a:hover {
-  color: #968484;
-}
+  color: #968484; }
 
 .icon-color {
-  color: black !important;
-}
+  color: #fff !important; }
+
+.carousel-text a {
+  color: #fff !important; }
+
+.corousel-button {
+  background-color: #bf1818;
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.5s; }
+
+.corousel-button:hover {
+  background-color: #580000; }
+
+.moreCategoriesTitle {
+  color: #bf1818; }
+
+.img-info {
+  transition: 0.5s; }
+
+.carouselMostSeenTitle {
+  color: #968484; }
 
 /*# sourceMappingURL=style.css.map */

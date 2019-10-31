@@ -1,12 +1,12 @@
 <template>
   <span>
-    <h1 class="mt-5 text-center" id="moreCategoriesTitle">MMORE CATEGORIES</h1>
+    <h2 class="default my-5 moreCategoriesTitle">Main categories</h2>
     <section class="default my-5">
       <div class="img-1">
         <router-link :to="route1">
           <v-img class="img-default img-1" :src="img1" alt>
             <div class="img-info">
-              <P>{{ title1}} </P>
+              <P>{{ title1 }} </P>
             </div>
           </v-img>
         </router-link>
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-export default { //TODO Alinhar texto do hover centro, e configurar melhor as imagens na tela
+export default {
   props: {
     route1: {},
     route2: {},
@@ -62,22 +62,27 @@ export default { //TODO Alinhar texto do hover centro, e configurar melhor as im
 </script>
 
 <style  scoped>
+h2{
+  padding-top: 30px;
+}
+
 .img-default {
   position: relative;
   width: 100%;
   height: 100%;
-  
 }
 
 .img-info {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   color: rgba(0, 0, 0, 0);
   background: rgba(0, 0, 0, 0);
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .img-info P {
@@ -88,10 +93,10 @@ export default { //TODO Alinhar texto do hover centro, e configurar melhor as im
 
 .img-info:hover {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   color: white;
   background: rgba(0, 0, 0, 0.664);
 }
@@ -99,49 +104,35 @@ export default { //TODO Alinhar texto do hover centro, e configurar melhor as im
 .img-1 {
   grid-area: img-1;
   background: black;
-  max-height: 60vh;
+  max-height: 578px;
   overflow: hidden;
-}
-
-.title-1 {
-  display: block;
-}
-
-.title-1:hover {
-  display: none;
 }
 
 .img-2 {
   grid-area: img-2;
   background: purple;
-  max-height: 30vh;
+  max-height: 276px;
 }
 
 .img-3 {
   grid-area: img-3;
   background: red;
-  max-height: 30vh;
+  max-height: 276px;
 }
 
 .img-4 {
   grid-area: img-4;
   background: yellow;
-  max-height: 60vh;
+  max-height: 578px;
 }
 
 .default {
   display: grid;
   grid-gap: 20px;
-  margin: 0 auto;
-  max-width: 1920px;
-  min-height: 30vh;
-  padding: 10px;
+  margin: auto;
+  max-width: 1700px;
   grid-template-areas:
-    "img-1 img-2  img-4"
-    "img-1 img-3  img-4";
-}
-
-.img-default:hove {
-  width: 1000px;
+    "img-1 img-2 img-4"
+    "img-1 img-3 img-4";
 }
 </style>

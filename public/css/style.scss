@@ -1,12 +1,20 @@
-$colorPrimary: rgb(4, 4, 99);
-$colorSecundary: white;
+$colorPrimary: #bf1818;
+$colorSecundary: #580000;
 $colorGray: #ececec;
 $timeTransition: .5s;
 $colorWhite: #fff;
-$DefaulText: #fff;
+$defaultTitlesTwo: #fff;
 $DefaultBg: #bf1818;
 $DefaultSubtitles: rgb(150, 132, 132);
 $defaultTitles: black;
+
+
+@mixin button {
+    box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: $timeTransition;
+}
 
 //----------------NAVTOP--------------
 
@@ -17,23 +25,6 @@ $defaultTitles: black;
 #footer{
     background-color: $colorPrimary;
     color: $colorWhite;
-}
-
-#carousel-text{
-   color: $colorSecundary;
-   
-}
-
-#corousel-button{
-    background-color: rgb(12, 12, 141);
-    color: $DefaulText;
-}
-#moreCategoriesTitle{
-    color: $DefaultSubtitles;
-}
-
-#carouselMostSeenTitle{
-    color: $DefaultSubtitles;
 }
 
 .text-primay{
@@ -70,7 +61,7 @@ a{
 }
 
 #nav-bar a{
-    color: $defaultTitles;
+    color: $defaultTitlesTwo;
     transition: $timeTransition;
 }
 
@@ -79,5 +70,34 @@ a{
 }
 
 .icon-color{
-    color: $defaultTitles !important;
+    color: $defaultTitlesTwo !important;
+}
+
+//---------------CAROUSEL----------------
+ 
+.carousel-text a{
+    color: $defaultTitlesTwo !important;
+}
+
+.corousel-button{
+    background-color: $colorPrimary;
+    @include button;   
+}
+
+.corousel-button:hover{
+    background-color: $colorSecundary;
+}
+
+//---------------Categories----------------
+
+.moreCategoriesTitle{
+     color: $colorPrimary;
+}
+
+.img-info {
+    transition: $timeTransition;
+  }
+ 
+.carouselMostSeenTitle{
+     color: $DefaultSubtitles;
 }

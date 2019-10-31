@@ -1,19 +1,22 @@
 <template> 
-  <div>
+  <div class="carousel">
+
       <v-carousel-item
         :src="src"
         reverse-transition="fade-transition"
         transition="fade-transition"
       >
+
         <v-row justify="end" align="center">
-          <v-col md="5" col="5" class="text" align="center" v-if="title && text">
-            <div  id="carousel-text">
-              <h2 >{{ title }}</h2>
-              <p >{{ text }}</p>
-              <a :href="buttonHref"><button v-if="buttonText" id="corousel-button">{{ buttonText}}</button></a>
+          <v-col md="6" col="6" class="text" align="center" v-if="title && text">
+            <div class="carousel-text">
+              <h2 v-bind:class="colorTitle">{{ title }}</h2>
+              <p v-bind:class="colorText">{{ text }}</p>
+              <a :href="buttonHref"><button v-if="buttonText" class="corousel-button">{{ buttonText }}</button></a>
             </div>
           </v-col>
         </v-row>
+
         <v-sheet></v-sheet>
       </v-carousel-item>
   </div>
@@ -22,14 +25,16 @@
 
 <script>
 export default {
-  data() { //Corrigir alinhamento Carousel
-          //Colocar click botao
+  data() { 
+          
     return {};
   },
   props: {
     src: {String},
     title: {String},
-    text: {String },
+    colorTitle: {String},
+    text: {String},
+    colorText: {String},
     buttonText:{String},
     buttonHref:{String}
   }
@@ -37,16 +42,28 @@ export default {
 </script>
 
 <style scoped>
-.text {
-  color: black;
-  padding: 12vw 5vw 0 5vw;
-  align-items: center;
-  background: rgba(216, 203, 203, 0.76);
-  height: 70vh;
+.carousel{
+  position: relative;
 }
 
-.text button{
-    padding: 10px;
-    border-radius: 15px;  
+.text {
+  color: black;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 5%;
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+button{
+  margin-top: 30px;
 }
 </style>
